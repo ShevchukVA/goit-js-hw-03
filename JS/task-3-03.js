@@ -3,10 +3,8 @@ const findBestEmployee = function (employees) {
   let bestEmployee;
 
   for (const employee in employees) {
-    const tasks = employees[employee];
-
-    if (tasks > max) {
-      max = tasks;
+    if (employees[employee] > max) {
+      max = employees[employee];
       bestEmployee = employee;
     }
   }
